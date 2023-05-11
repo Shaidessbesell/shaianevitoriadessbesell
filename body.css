@@ -1,0 +1,66 @@
+body{
+    background-image:linear-gradient(to right, rgb(20,147,220), rgb(9,94,130), rgb(6,56,75));
+    font-family: Arial,Helvetica,Sans-Serif;
+}
+.box{
+    color:white;
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.6);
+    padding:15px  ;
+    border-radius: 15px;
+    width:30%;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border:1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputBox{
+    position:relative;
+}
+.inputUser{
+    background:none;
+    border:none;
+    border-bottom:1px solid white;
+    outline:none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;  
+    left:0px;
+    pointer-events: none;
+    transition: 5px;
+}
+.inputeUser:focus~.labelinput,
+.jinputUser:valid~.labelInput{
+    top: 20px;
+    border-radius: 10px;
+    outline:none;
+    font-size:15px;
+}
+#enviar{
+    background-image: linear-gradient(to right, rgb(0,92,192),rgb(90,20,220));
+    width:100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#enviar:houver{
+    background-image: linear-gradient(to right, rgb(0,92,192), rgb(90,20,195));
+    /*Qdo passar o mouse por cima do botão enviar, irá aplicar esse azul um pouco mais escuro*/
+}
