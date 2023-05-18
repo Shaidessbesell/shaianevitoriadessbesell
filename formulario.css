@@ -1,5 +1,5 @@
 body{
-    background-image:linear-gradient(to right, rgb(20,147,220), rgb(9,94,130), rgb(6,56,75));
+background-image: linear-gradient(to right, rgb(20,147,220), rgb(9,94,130), rgb(6,56,75));
     font-family: Arial,Helvetica,Sans-Serif;
 }
 .box{
@@ -9,7 +9,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     background-color: rgba(0,0,0,0.6);
-    padding:15px  ;
+    padding:15px ;
     border-radius: 15px;
     width:30%;
 }
@@ -23,18 +23,18 @@ legend{
     background-color: dodgerblue;
     border-radius: 8px;
 }
-.inputBox{
+.inutpBox{
     position:relative;
 }
 .inputUser{
     background:none;
-    border:none;
+    border:none;/*tirar a borda*/
     border-bottom:1px solid white;
-    outline:none;
+    outline:none;/*tirar a linha de fora do input*/
     color: white;
     font-size: 20px;
     width: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 2px;/*espaço entre cada caracter no input*/
 }
 .labelInput{
     position: absolute;
@@ -45,10 +45,17 @@ legend{
 }
 .inputeUser:focus~.labelinput,
 .jinputUser:valid~.labelInput{
-    top: 20px;
+    
+    top: -20px;
+    font-size: 20px;
+    color:dodgerblue
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
     border-radius: 10px;
-    outline:none;
-    font-size:15px;
+    outline: none;
+    font-size: 15px;
 }
 #enviar{
     background-image: linear-gradient(to right, rgb(0,92,192),rgb(90,20,220));
@@ -62,5 +69,4 @@ legend{
 }
 #enviar:houver{
     background-image: linear-gradient(to right, rgb(0,92,192), rgb(90,20,195));
-    /*Qdo passar o mouse por cima do botão enviar, irá aplicar esse azul um pouco mais escuro*/
 }
