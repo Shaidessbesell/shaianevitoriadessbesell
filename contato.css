@@ -1,34 +1,36 @@
+
 header{
-    background-image: linear-gradient(rgb(134, 134, 184), rgb(150, 130, 130), rgb(0, 0, 0));
+    background-image: linear-gradient(white,gray,black);
     padding: 20px
 }
 h1{
     color: whitesmoke;
 }
 
-#logo1{
-    border-radius: 90px;
-    width: 100px;
-}
-
 #logo{
-    border-radius: 100px;
+    border-radius: 20px;
     width: 250px;
 }
 
-@font-face {
-    font-family:'Higuen';
-    src: url('Higuen\ Serif.otf') format('OpenType')
-       
+#logo1{
+    border-radius: 20px;
+    width: 120px;
 }
+
+@font-face {
+    font-family:'blinker';
+    src: url('Blinker-Regular.ttf') format('TrueType');
+}
+
 .titulo-principal{
     position: absolute;
-    top: 15%;
-    left: 40%;
+    top: 13%;
+    left: 30%;
     transform: translate(-30px -10px);
-    font-size: 45px;
-    font-family: 'Higuen';
+    font-size: 35px;
+    font-family: 'blinker';
 }
+
 main{
     width: 940px;
     margin: auto;
@@ -43,13 +45,13 @@ form label, from p{
     font-size: 20px;
     margin: 0 0 10px;
 }
-.input-padrao{
+
+input-padrao{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
-
 .checkbox{
     margin: 20px 0;
 }
@@ -57,7 +59,7 @@ form label, from p{
 .enviar{
     width: 40%;
     padding: 15px 0;
-    background: rgb(51, 47, 53);
+    background: rgb(71, 70, 68);
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -65,4 +67,15 @@ form label, from p{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+}
+
+.enviar:houver{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 10px 0 0;
 }
