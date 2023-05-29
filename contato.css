@@ -6,6 +6,11 @@ h1{
     color: whitesmoke;
 }
 
+#logo1{
+    border-radius: 90px;
+    width: 100px;
+}
+
 #logo{
     border-radius: 100px;
     width: 250px;
@@ -18,10 +23,10 @@ h1{
 }
 .titulo-principal{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 40%;
     transform: translate(-30px -10px);
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Higuen';
 }
 main{
@@ -31,4 +36,33 @@ main{
 
 form{
     margin: 40px 0;
+}
+
+form label, from p{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(51, 47, 53);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
 }
