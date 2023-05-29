@@ -1,36 +1,35 @@
-
 header{
-    background-image: linear-gradient(white,gray,black);
+    background-image: linear-gradient(rgb(105, 102, 141), rgb(150, 130, 130), rgb(0, 0, 0));
     padding: 20px
 }
 h1{
     color: whitesmoke;
 }
 
+#logo1{
+    border-radius: 90px;
+    width: 100px;
+    
+}
+
 #logo{
-    border-radius: 20px;
+    border-radius: 100px;
     width: 250px;
 }
 
-#logo1{
-    border-radius: 20px;
-    width: 120px;
-}
-
 @font-face {
-    font-family:'blinker';
-    src: url('Blinker-Regular.ttf') format('TrueType');
+    font-family:'Higuen';
+    src: url('Higuen\ Serif.otf') format('OpenType')
+       
 }
-
 .titulo-principal{
     position: absolute;
-    top: 13%;
-    left: 30%;
+    top: 15%;
+    left: 40%;
     transform: translate(-30px -10px);
-    font-size: 35px;
-    font-family: 'blinker';
+    font-size: 45px;
+    font-family: 'Higuen';
 }
-
 main{
     width: 940px;
     margin: auto;
@@ -45,13 +44,13 @@ form label, from p{
     font-size: 20px;
     margin: 0 0 10px;
 }
-
-input-padrao{
+.input-padrao{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
+
 .checkbox{
     margin: 20px 0;
 }
@@ -59,7 +58,7 @@ input-padrao{
 .enviar{
     width: 40%;
     padding: 15px 0;
-    background: rgb(71, 70, 68);
+    background: rgb(51, 47, 53);
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -70,12 +69,15 @@ input-padrao{
 }
 
 .enviar:houver{
-    background: darkorange;
+    background: black;
     transform: scale(1.2);
 }
-
-.copyright {
-    color: #ffffff;
+.copyright{
+    color: white;
     font-size: 13px;
     margin: 10px 0 0;
+}
+footer{
+    text-align: center;
+    background-image: linear-gradient(rgb(105, 102, 141), rgb(150, 130, 130), rgb(0, 0, 0));
 }
