@@ -1,77 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="body{.css">
+    <meta charset = "UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
 </head>
 <body>
-    <header><!--cabeçalho--></header>
-
-    <main><!--meio-->
-        <section class="box">
-            <form>
-                <fieldset>
-                    <legend> <strong>Formulario de Clientes</strong> </legend>
-                    <br>
-                    <section class="inputBox">
-                        <input type="text" name="nome" class="inputUser" required>
-                        <label for="name" class="labelinput"> Nome completo </label>
-                    </section>
-                    <br>
-                    <section class="inputBox">
-                        <input type="tex" name="email" id="email" class="inputUser">
-                        <label for="email" class="labelinput"> Email </label>
-                    </section class="inputBox">
-                    <br>
-                    <section>
-                        <input type="tel" name="telefone" id="telefone" class="inputUser">
-                        <label for="telefone" class="labelinput"> Telefone </label>
-                    </section>
-
-                    <P>Sexo:</P>
-
-                    <input type="radio" name="genero" id="feminino" value="feminino" required>
-                    <label for="feminino"> Feminino </label>
-                    <br>
-
-                    <input type="radio" name="genero" id="masculino" value="masculino">
-                    <label for="masculino"> Masculino </label>
-                    <br> 
-
-                    <input type="radio" name="genero" id="outro" value="outro">
-                    <label for="outro"> Outro </label>
-                    <br><br>
-
-                    <label for="data_nascimento"> <strong>Ano de Nascimento</strong> </label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" required>
-                    <br><br><br>
-
-                    <section class="inputBox">
-                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                        <label for="cidade" class="labelinput"> Cidade </label>
-                    </section>
-                    <br><br>
-                    
-                    <section class="inputBox">
-                        <input type="text" name="estado" id="estado" class="inputUser" required>
-                        <label for="estado" class="labelinput"> Estado </label>
-                    </section>
-                    <br><br>
-
-                    <section class="inputBox">
-                        <input type="tex" name="endereco" id="endereco" class="inputUser" required>
-                        <label for="endereco" class="inputUser"> Endereço </label>
-                    </section>
-                    <br><br>
-
-                        <input type="submit" value="Enviar Formulario" id="enviar">
-
-                </fieldset>
-            </form>
-        </section>
-    </main>   
-    <footer>Shai Dessbesell </footer>
+    <pre> 
+        <fieldset>
+         <form>
+            <legend>Cadastro</legend>
+    <form method = "post" action=" ">
+    Nome <input type = "text" size = 80 maxlenght = 70 placeHolder = "digite seu nome" name = "nome">
+    Data nascimento <input type = "date">
+    Rg <input type = "inumber" size="10" placeHolder = "digite sem os pontos" required name="Rg">
+    Email <input type="email" size =80 name="email" name="email">
+    Telefone<input type="tel" name="telefone">
+    Senha<input type="Password" name="senha" size="10" maxlength="10">
+    Curso<input type="checkbox" name="curso" value="Administração"> Administração
+     <input type="checkbox" name="curso" value="Desenvolvimento">Desenvolvimento de Sistemas
+     <input type="checkbox" name="curso" value="Eletrônica"> Eletrônica
+    Período <input type="radio" name="Matutino"> Matutino
+        <input type="radio" name="Vespertino"> Vespertino
+        <input type="radio" name="Noturno"> Noturno
+    Cidade  <select name="cidade">
+        <option> Cascavel </option>
+        <option> Corbélia </option>
+        <option> Penha </option>
+        </select>
+        <textarea roses=30 cobs=40>
+        observação
+        </textarea>
+    </form> 
+    </fieldset> 
+    </pre> 
 </body>
 </html>

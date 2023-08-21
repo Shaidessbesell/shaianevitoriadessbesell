@@ -1,72 +1,30 @@
 body{
-background-image: linear-gradient(to right, rgb(20,147,220), rgb(9,94,130), rgb(6,56,75));
-    font-family: Arial,Helvetica,Sans-Serif;
+    background-color: gray;
 }
-.box{
-    color:white;
-    position:absolute;
-    top:55%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    background-color: rgba(0,0,0,0.6);
-    padding:15px ;
-    border-radius: 15px;
-    width:30%;
-}
-fieldset{
-    border: 3px solid dodgerblue;
-}
-legend{
-    border:1px solid dodgerblue;
-    padding: 10px;
-    text-align: center;
-    background-color: dodgerblue;
-    border-radius: 8px;
-}
-.inutpBox{
-    position:relative;
-}
-.inputUser{
-    background:none;
-    border:none;/*tirar a borda*/
-    border-bottom:1px solid white;
-    outline:none;/*tirar a linha de fora do input*/
-    color: white;
-    font-size: 20px;
+input[type=text]{
+    background-color: rgb(105, 99, 121);
+    color: rgb(255, 255, 255);
     width: 100%;
-    letter-spacing: 2px;/*espaço entre cada caracter no input*/
+    border: 2px solid #555;
+    border-radius: 4px;
 }
-.labelInput{
-    position: absolute;
-    top: 0px;  
-    left:0px;
-    pointer-events: none;
-    transition: 5px;
-}
-.inputeUser:focus~.labelinput,
-.jinputUser:valid~.labelInput{
-    
-    top: -20px;
+input{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(172, 234, 238);
+    color: rgb(126, 174, 214);
     font-size: 20px;
-    color:dodgerblue
+    width: 30px;
+    height: 5px;
+    border-color: azure;
+    border-style: dotted;
+    text-decoration: underline;
+    font-weight: bold;
 }
-#data_nascimento{
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
+input[type=date]{
+    color: rgb(139, 168, 223);
 }
-#enviar{
-    background-image: linear-gradient(to right, rgb(0,92,192),rgb(90,20,220));
-    width:100%;
-    border: none;
-    padding: 15px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
+select{
+    color: rgb(188, 204, 218);
 }
-#enviar:houver{
-    background-image: linear-gradient(to right, rgb(0,92,192), rgb(90,20,195));
-}
+
